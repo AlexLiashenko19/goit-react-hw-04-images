@@ -70,7 +70,6 @@ export class App extends Component {
         {isModalShow && (
           <Modal onClose={this.handleModClose} image={modalImg} />
         )}
-        {/* <Audio /> */}
       </DivElem>
     );
   }
