@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Gallery } from './ImageGallery/ImageGallery';
 import { SearchBar } from './Searchbar/Searchbar';
 import { getImages } from '../helpers/helpers';
@@ -12,7 +12,6 @@ export const App = () => {
   const [page, setPage] = useState(1);
   const [images, setImage] = useState([]);
   const [onLoadMore, setOnLoadMore] = useState(false);
-  const [totalHits, setTotalHits] = useState(null);
   const [isError, setIsError] = useState('');
   const [modalImg, setModalImg] = useState(null);
   const [isModalShow, setModalShow] = useState(false);
